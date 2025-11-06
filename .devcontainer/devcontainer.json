@@ -1,0 +1,32 @@
+{
+	"name": "Rust",
+	"image": "mcr.microsoft.com/devcontainers/rust:latest",
+
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {}
+	},
+
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"lldb.executable": "/usr/bin/lldb",
+				"files.watcherExclude": {
+					"**/target/**": true
+				},
+				"rust-analyzer.checkOnSave.command": "clippy"
+			},
+			"extensions": [
+				"rust-lang.rust-analyzer",
+				"vadimcn.vscode-lldb",
+				"fill-labs.dependi",
+				"tamasfe.even-better-toml"
+			]
+		}
+	},
+
+	"containerEnv": {
+		"RUST_LOG": "TRACE"
+	},
+
+	"postCreateCommand": "rustc --version"
+}
