@@ -59,17 +59,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a23eb6b1614318a8071c9b2521f36b424b2c83db5eb3a0fead4a6c0809af6e61"
 
 [[package]]
-name = "aoc2015"
-version = "1.0.0"
-dependencies = [
- "anyhow",
- "clap",
- "log",
- "simple_logger",
- "utf8-chars",
-]
-
-[[package]]
 name = "arrayvec"
 version = "0.7.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -137,6 +126,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ececcb659e7ba858fb4f10388c250a7252eb0a27373f1a72b8748afdd248e587"
 dependencies = [
  "powerfmt",
+]
+
+[[package]]
+name = "everybody_codes_2025"
+version = "1.0.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "log",
+ "simple_logger",
+ "utf8-chars",
 ]
 
 [[package]]
